@@ -8,17 +8,18 @@ import {
  } from "@material-tailwind/react";
 export const FormRegister = () => {
   return (
-   <Card color="transparent" shadow={false}>
+   <div className='flex flex-col justify-center items-center bg-deep-orange-100'>
+   <Card color="white" shadow={false} className='p-10 '>
       <Typography variant="h4" color="blue-gray">
-        Sign Up
+        REGISTRO
       </Typography>
-      <Typography color="gray" className="mt-1 font-normal">
-        Nice to meet you! Enter your details to register.
+      <Typography color="gray" className="mt-1 font-normal"> 
+¡Encantado de conocerlo! Ingresa tus datos para registrarte.
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
         <div className="mb-1 flex flex-col gap-6">
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Your Name
+           Tu nombre
           </Typography>
           <Input
             size="lg"
@@ -29,7 +30,7 @@ export const FormRegister = () => {
             }}
           />
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Your Email
+           Tu correo
           </Typography>
           <Input
             size="lg"
@@ -40,7 +41,7 @@ export const FormRegister = () => {
             }}
           />
           <Typography variant="h6" color="blue-gray" className="-mb-3">
-            Password
+            Contraseña
           </Typography>
           <Input
             type="password"
@@ -59,27 +60,29 @@ export const FormRegister = () => {
               color="gray"
               className="flex items-center font-normal"
             >
-              I agree the
+              Acepto los
               <a
                 href="#"
                 className="font-medium transition-colors hover:text-gray-900"
               >
-                &nbsp;Terms and Conditions
+                &nbsp;terminos y condiciones 
               </a>
             </Typography>
           }
           containerProps={{ className: "-ml-2.5" }}
         />
         <Button className="mt-6" fullWidth>
-          sign up
+         Registrarse
         </Button>
         <Typography color="gray" className="mt-4 text-center font-normal">
-          Already have an account?{" "}
+        ¿Ya tienes una cuenta?{" "}
           <a href="#" className="font-medium text-gray-900">
-            Sign In
+           
+Iniciar sesión
           </a>
         </Typography>
       </form>
     </Card>
+    </div>
   )
 }
