@@ -33,7 +33,7 @@ const  FormLogin = () => {
                 Te estabamos esperando.
             </Typography>
             <form
-                className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96"
+                className="mt-8 mb-2 max-w-screen-lg sm:w-96 w-full"
                 onSubmit={(e) => {
                     e.preventDefault();
                     handleLogin();
@@ -48,7 +48,7 @@ const  FormLogin = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     placeholder="carloslopez@mail.com"
-                    className=" !border-t-blue-gray-200 transition-all focus:!border-t-gray-900"
+                    className=" !border-t-blue-gray-200 w-full transition-all focus:!border-t-gray-900"
                 />
                 <Typography variant="h6" color="blue-gray" className="-mb-3">
                     Contraseña
@@ -64,7 +64,7 @@ const  FormLogin = () => {
 
                 <Button type="submit" className="mt-6" fullWidth>Ingresar</Button>
                 <div className="w-full flex justify-center items-center pt-5">
-                    <p>¿No tienes una cuenta? <Link className="font-semibold" to="/register">Registrame</Link></p>
+                    <p className="text-center">¿No tienes una cuenta? <Link className="font-semibold" to="/register">Registrame</Link></p>
                 </div>
             </form>
         </Card>
