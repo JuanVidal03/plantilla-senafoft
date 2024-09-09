@@ -14,12 +14,7 @@ export function StatisticsChart({ color, chart, title, description }) {
         <Chart {...chart} />
       </CardHeader>
       <CardBody className="px-6 pt-0 ">
-        <Typography variant="h6" color="blue-gray">
-          {title}
-        </Typography>
-        <Typography variant="small" className="font-light text-blue-gray-600">
-          {description}
-        </Typography>
+       
       </CardBody>
       
     </Card>
