@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {
    Card,
    Input,
@@ -6,12 +6,12 @@ import {
    Button,
    Typography,
  } from "@material-tailwind/react";
+ import { Link } from 'react-router-dom';
 export const FormRegister = () => {
   return (
-   <div className='flex flex-col justify-center items-center bg-deep-orange-100'>
-   <Card color="white" shadow={false} className='p-10 '>
+   <Card color="white" shadow={false} className='p-10 min-w-0'>
       <Typography variant="h4" color="blue-gray">
-        REGISTRO
+        ¡Registro!
       </Typography>
       <Typography color="gray" className="mt-1 font-normal"> 
 ¡Encantado de conocerlo! Ingresa tus datos para registrarte.
@@ -78,11 +78,11 @@ export const FormRegister = () => {
         ¿Ya tienes una cuenta?{" "}
           <a href="#" className="font-medium text-gray-900">
            
-Iniciar sesión
+<Link to={'/login'}>Iniciar sesión</Link>
           </a>
         </Typography>
       </form>
     </Card>
-    </div>
+    
   )
 }

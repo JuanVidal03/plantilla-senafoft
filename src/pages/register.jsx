@@ -1,10 +1,11 @@
-import React from 'react'
+
 import { FormRegister } from '../components/formRegister'
 export const Register = () => {
+   
   return (
-    <>
+    <div className='bg-auth-bg bg-cover flex justify-center items-center'>
     <FormRegister/>
+    </div>
     
-    </>
   )
 }
