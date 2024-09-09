@@ -6,7 +6,11 @@ export default withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "auth-bg": "url('./src/assets/plantilla-bg.jpg')"
+      }
+    },
   },
   plugins: [],
 })
