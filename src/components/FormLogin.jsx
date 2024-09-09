@@ -22,7 +22,7 @@ const  FormLogin = () => {
         }
         console.log(formData);
         
-        // navigate("/");
+        navigate("/");
     }
 
 
